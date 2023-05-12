@@ -19,6 +19,7 @@ const fetchMyIP = (cb) => {
     }
   );
 };
+
 const fetchCoordsByIP = (ip, cb) => {
   request(`https://ipwho.is/${ip}`, (error, response, body) => {
     if (error) {
